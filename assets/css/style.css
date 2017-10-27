@@ -4,10 +4,6 @@ body {
     color: #777;
     
     background-image: url("../images/subtle_grunge.png");
-    
-    /*For Non-Sticky Footer*/
-    position: relative;
-    min-height: 100vh;
 }
 
 .content {
@@ -18,6 +14,7 @@ body {
 .clearfix::after {
     clear: both;
 }
+
 /*end Generic CSS, Applies To Each Page*/
 
 
@@ -136,8 +133,6 @@ footer {
     border-top: 5px solid #4aaaa5;
     
     position: absolute;
-    bottom: 0;
-    left: 0;
 
     color: #ddd;
     font-size: .75em;
@@ -153,6 +148,10 @@ footer {
     margin: 5px auto;
     width: 100%;
 }
+
+.footer-push-content {
+    min-height: calc(99vh - 50px);
+   }
 
 /*end CSS For The Footer On Each Page*/
 
