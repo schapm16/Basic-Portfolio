@@ -128,7 +128,7 @@ header nav a:nth-of-type(2) {
 footer {
     width: 100%;
     height: 50px;
-    border-box: box-sizing;
+    box-sizing: border-box;
     
     border-top: 5px solid #4aaaa5;
     
@@ -150,7 +150,7 @@ footer {
 }
 
 .footer-push-content {
-    min-height: calc(99vh - 50px);
+    min-height: calc(100vh - 50px);
    }
 
 /*end CSS For The Footer On Each Page*/
@@ -172,6 +172,80 @@ footer {
     margin: 20px 0 0 0;
     overflow: auto;
     
-    line-height: 200%;
+    line-height: 150%;
 }
 /*end CSS For Index.html*/
+
+/*Applies To Portfolio.html Only*/
+#portfolio-content {
+    overflow: auto;
+}
+
+.image-wrapper {
+    position: relative;
+    margin: 20px 0;
+}
+
+.image-wrapper.left {
+   float: left; 
+}
+
+.image-wrapper.right {
+    float: right;
+}
+
+.image-wrapper img {
+    height: auto;
+    width: 275px;
+}
+
+.image-wrapper p {
+    width: 275px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    
+    
+    background-color: #4aaaa5;
+    
+    color: white;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+    text-align: center;
+}
+/*end CSS For Portfolio.html*/
+
+/*Applies To Contact.html Only*/
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    resize: none;
+    
+    padding: 5px;
+    font-family: inherit;
+}
+
+form input[type = submit] {
+    width: 100px;
+    
+    color: white;
+    background-color: #4aaaa5;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+/*end CSS For Contact.html*/
